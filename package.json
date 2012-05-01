@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "require('http') // a blog about node.js",
   "dependencies": {
-    "docpad": "5.1.2"
+    "docpad": "5.1.2",
+    "docpad-plugin-markdown": "latest"
   }
 }
