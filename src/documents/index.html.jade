@@ -1,8 +1,18 @@
 ---
 layout: default
-title: 'Require HTTP'
+title: "require('http')"
 ---
 
-# Require HTTP
+h1 
+  a(href="/") require('http')
 
-Welcome to Require HTTP
+p Welcome to Require HTTP
+
+- for (var key in (documents || []))
+  - if (documents[key].url && documents[key].url.indexOf('/blog/') === 0)
+    h2
+      a(href="#{documents[key].url}")= documents[key].title
+    p= "Author: "
+      = documents[key].author 
+    p= documents[key].date
+    p!= documents[key].description
