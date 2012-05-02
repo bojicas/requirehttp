@@ -3,8 +3,6 @@ layout: default
 title: "require('http')"
 ---
 
-!= partial('navbar.html.jade')
-
 - for (var key in (documents || []))
   - if (documents[key].url && documents[key].url.indexOf('/blog/') === 0)
     h2
